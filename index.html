@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sprachtrainer WebApp</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 2rem;
+      background-color: #f0f0f0;
+    }
+    #sentence {
+      font-size: 1.8rem;
+      margin: 2rem 0;
+      min-height: 3rem;
+    }
+    #translation {
+      font-size: 1.4rem;
+      color: #333;
+      margin-bottom: 2rem;
+      min-height: 2rem;
+    }
+    #accuracy {
+      font-size: 1.2rem;
+      color: #666;
+      margin-bottom: 1rem;
+      min-height: 1rem;
+    }
+    #circleContainer {
+      position: relative;
+      width: 60px;
+      height: 60px;
+      margin: 0 auto 1rem;
+    }
+    #accuracyCircle {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0.3;
+      background-color: gray;
+    }
+    #accuracyProgress {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      clip-path: circle(calc(var(--progress, 0%) * 0.3) at center);
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    button {
+      font-size: 1rem;
+      padding: 1rem 2rem;
+      margin: 1rem;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      background: #0078D7;
+      color: white;
+    }
+    button:hover {
+      background: #005ea1;
+    }
+  </style>
+</head>
+<body>
+  <h1>🗣️ Sprachtrainer WebApp</h1>
+
+  <div id="sentence">Drücke "Start" oder sage "weiter"</div>
+  <div id="circleContainer">
+    <div id="accuracyCircle"></div>
+    <div id="accuracyProgress"></div>
+  </div>
+  <div id="accuracy"></div>
+  <div id="translation"></div>
+  <button id="startBtn">Start</button>
+
+  <script>
+    let sentences = [];
+    let index = -1;
+    let running = true;
+    const sentenceElem = document.getElementById("sentence");
+    const translationElem = document.getElementById("translation");
+    const accuracyElem = document.getElementById("accuracy");
+    const accuracyCircle = document.getElementById("accuracyCircle");
+    const accuracyProgress = document.getElementById("accuracyProgress");
+
+    fetch('sentences.json')
+      .then(response => response.json())
+      .then(data => {
+        sentences = data.map(entry => ({
+          en: entry.en || entry.english,
+          de: entry.de || entry.german
+        }));
+      })
+      .catch(() => {
+        sentences = [
+          { en: "I am going to the supermarket.", de: "Ich gehe zum Supermarkt." },
+          { en: "She is watching a movie.", de: "Sie schaut einen Film." }
+        ];
+      });
+
+    function speak(text, lang = "en-US", callback) {
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = lang;
+      utterance.rate = 0.9;
+      utterance.onend = () => callback && callback();
+      speechSynthesis.speak(utterance);
+    }
+
+    let recognition;
+    function initSpeechRecognition() {
+      const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+      if (!SpeechRecognition) return alert("Spracherkennung wird nicht unterstützt.");
+
+      recognition = new SpeechRecognition();
+      recognition.lang = 'de-DE';
+      recognition.continuous = true;
+      recognition.interimResults = false;
+
+      recognition.onresult = (event) => {
+        const lastResult = event.results[event.results.length - 1][0].transcript.trim().toLowerCase();
+        console.log("Erkannt:", lastResult);
+        handleVoiceCommand(lastResult);
+      };
+
+      recognition.onerror = (event) => console.error("Spracherkennung Fehler:", event.error);
+
+      recognition.onend = () => {
+        if (running) recognition.start();
+      };
+
+      recognition.start();
+    }
+
+    let waitForRepeat = false;
+
+    function levenshtein(a, b) {
+      const matrix = Array.from({ length: b.length + 1 }, (_, i) => [i]);
+      for (let j = 0; j <= a.length; j++) matrix[0][j] = j;
+      for (let i = 1; i <= b.length; i++) {
+        for (let j = 1; j <= a.length; j++) {
+          const cost = a[j - 1] === b[i - 1] ? 0 : 1;
+          matrix[i][j] = Math.min(
+            matrix[i - 1][j] + 1,
+            matrix[i][j - 1] + 1,
+            matrix[i - 1][j - 1] + cost
+          );
+        }
+      }
+      return matrix[b.length][a.length];
+    }
+
+    function similarityPercentage(a, b) {
+      a = a.toLowerCase().replace(/[^a-z0-9 ]/gi, "");
+      b = b.toLowerCase().replace(/[^a-z0-9 ]/gi, "");
+      const maxLen = Math.max(a.length, b.length);
+      if (maxLen === 0) return 100;
+      const dist = levenshtein(a, b);
+      return Math.round((1 - dist / maxLen) * 100);
+    }
+
+    function handleVoiceCommand(cmd) {
+      if (cmd.includes("weiter") || cmd.includes("next")) {
+        nextSentence();
+      } else if (cmd.includes("zurück") || cmd.includes("back")) {
+        prevSentence();
+      } else if (cmd.includes("stopp") || cmd.includes("stop")) {
+        stopProgram();
+      } else {
+        checkRepeat(cmd);
+      }
+    }
+
+    function saySentence() {
+      if (index < 0 || index >= sentences.length) return;
+      const s = sentences[index];
+      sentenceElem.textContent = s.en;
+      translationElem.textContent = "";
+      accuracyElem.textContent = "";
+      accuracyCircle.style.backgroundColor = "transparent";
+      accuracyProgress.style.backgroundColor = "transparent";
+      accuracyProgress.style.setProperty('--progress', '0%');
+      speak(s.en, "en-US", () => {
+        waitForRepeat = true;
+        sentenceElem.textContent = s.en + " (bitte wiederholen)";
+      });
+    }
+
+    function checkRepeat(spoken) {
+      if (!waitForRepeat) return;
+      const expected = sentences[index].en;
+      const percentage = similarityPercentage(spoken, expected);
+      accuracyElem.textContent = `Übereinstimmung: ${percentage}%`;
+      let color = "red";
+      if (percentage >= 85) color = "green";
+      else if (percentage >= 70) color = "yellow";
+
+      accuracyCircle.style.backgroundColor = color;
+      accuracyProgress.style.backgroundColor = color;
+      accuracyProgress.style.setProperty('--progress', percentage + '%');
+
+      waitForRepeat = false;
+      translationElem.textContent = sentences[index].de || "";
+      // Nur den deutschen Satz sprechen, keine weitere Ausgabe über Prozentzahlen
+      speak(sentences[index].de || "", "de-DE");
+    }
+
+    function nextSentence() {
+      if (!running || waitForRepeat) return;
+      index = (index + 1) % sentences.length;
+      saySentence();
+    }
+
+    function prevSentence() {
+      if (!running || waitForRepeat) return;
+      index = (index - 1 + sentences.length) % sentences.length;
+      saySentence();
+    }
+
+    function stopProgram() {
+      running = false;
+      sentenceElem.textContent = "Programm gestoppt.";
+      translationElem.textContent = "";
+      accuracyElem.textContent = "";
+      accuracyCircle.style.backgroundColor = "transparent";
+      accuracyProgress.style.backgroundColor = "transparent";
+      speak("Programm wird beendet.", "de-DE");
+      if (recognition) recognition.stop();
+    }
+
+    document.getElementById("startBtn").addEventListener("click", () => {
+      if (!running) running = true;
+      nextSentence();
+    });
+
+    window.onload = () => {
+      initSpeechRecognition();
+    };
+  </script>
+</body>
+</html>

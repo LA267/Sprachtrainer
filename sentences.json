@@ -1,0 +1,893 @@
+[
+    {"english": "How are you?", "german": "Wie geht es dir?"},
+    {"english": "I am learning English.", "german": "Ich lerne Englisch."},
+    {"english": "This is a beautiful day.", "german": "Dies ist ein schöner Tag."},
+    {"english": "Can you help me?", "german": "Kannst du mir helfen?"},
+    {"english": "Where is the station?", "german": "Wo ist der Bahnhof?"},
+    {"english": "I would like a coffee.", "german": "Ich hätte gerne einen Kaffee."},
+    {"english": "What time is it?", "german": "Wie spät ist es?"},
+    {"english": "I don't understand.", "german": "Ich verstehe nicht."},
+    {"english": "Nice to meet you.", "german": "Schön, dich kennenzulernen."},
+    {"english": "See you tomorrow.", "german": "Bis morgen."},
+    {"english": "Be careful.", "german":"Sei vorsichtig."},
+    {"english": "Can you translate this for me?", "german":"Kannst du das für mich übersetzen?"},
+    {"english": "Certainly!", "german": "Klar!"},
+    {"english": "Good afternoon.", "german": "Guten Nachmittag."},
+    {"english": "Good evening sir.", "german": "Guten Abend."},
+    {"english": "Good Luck.", "german": "Viel Glück."},
+    {"english": "Good morning.", "german": "Guten Morgen."},
+    {"english": "Great.", "german": "Super."},
+    {"english": "Happy Birthday.", "german": "Herzlichen Glückwunsch zum Geburtstag."},
+    {"english": "Have a good trip.", "german": "Gute Reise."},
+    {"english": "Hello.", "german": "Hallo."},
+    {"english": "Nice to meet you.", "german": "Schön Sie kennenzulernen."},
+    {"english": "Please call me.", "german": "Bitte ruf' mich an."},
+    {"english": "Be careful.", "german": "Sei vorsichtig."},
+    {"english": "Be careful driving.", "german": "Fahr vorsichtig."},
+    {
+    "english": "Can you translate this for me?", "german": "Kannst du das für mich übersetzen?"},
+    {
+    "english": "Chicago is very different from Boston.",
+    "german": "Chicago ist anders als Boston."
+    },
+    {
+    "english": "Don't worry.",
+    "german": "Keine Angst."
+    },
+  {
+    "english": "Everyone knows it.",
+    "german": "Das weiß doch jeder."
+  },
+  {
+    "english": "Everything is ready.",
+    "german": "Alles ist bereit."
+  },
+  {
+    "english": "Excellent.",
+    "german": "Ausgezeichnet."
+  },
+  {
+    "english": "From time to time.",
+    "german": "Von Zeit zu Zeit."
+  },
+  {
+    "english": "Good idea.",
+    "german": "Das ist eine gute Idee."
+  },
+  {
+    "english": "He likes it very much.",
+    "german": "Es gefällt ihm sehr."
+  },
+  {
+    "english": "Help!",
+    "german": "Hilfe!"
+  },
+  {
+    "english": "He's coming soon.",
+    "german": "Er kommt bald."
+  },
+  {
+    "english": "He's right.",
+    "german": "Er hat recht."
+  },
+  {
+    "english": "He's very annoying.",
+    "german": "Er ist sehr belastend."
+  },
+  {
+    "english": "He's very famous.",
+    "german": "Er ist sehr berühmt."
+  },
+  {
+    "english": "How are you?",
+    "german": "Wie geht es Ihnen?"
+  },
+  {
+    "english": "How's work going?",
+    "german": "Wie geht es auf Arbeit?"
+  },
+  {
+    "english": "Hurry!",
+    "german": "Beeil dich!"
+  },
+  {
+    "english": "I ate already.",
+    "german": "Ich habe schon gegessen."
+  },
+  {
+    "english": "I can't hear you.",
+    "german": "Ich kann Sie nicht hören."
+  },
+  {
+    "english": "I'd like to go for a walk.",
+    "german": "Ich würde mir gern die Beine vertreten."
+  },
+  {
+    "english": "I don't know how to use it.",
+    "german": "Ich weiß nicht, wie ich das benutzen soll."
+  },
+  {
+    "english": "I don't like him.",
+    "german": "Ich mag ihn nicht."
+  },
+  {
+    "english": "I don't like it.",
+    "german": "Ich mag es nicht."
+  },
+  {
+    "english": "I don't speak very well.",
+    "german": "Ich spreche nicht sehr gut."
+  },
+  {
+    "english": "I don't understand.",
+    "german": "Ich verstehe das nicht."
+  },
+  {
+    "english": "I don't want it.",
+    "german": "Ich will es nicht."
+  },
+  {
+    "english": "I don't want that.",
+    "german": "Ich will das nicht."
+  },
+  {
+    "english": "I don't want to bother you.",
+    "german": "Ich will Sie nicht belästigen."
+  },
+  {
+    "english": "I feel good.",
+    "german": "Mir geht es gut."
+  },
+  {
+    "english": "If you need my help,please let me know.",
+    "german": "Falls du meine Hilfe brauchst, sag Bescheid."
+  },
+  {
+    "english": "I get off of work at 6.",
+    "german": "Ich bin um 18 Uhr mit der Arbeit fertig."
+  },
+  {
+    "english": "I have a headache.",
+    "german": "Ich habe Kopfschmerzen."
+  },
+  {
+    "english": "I hope you and your wife have a nice trip.",
+    "german": "Ich hoffe, dass Sie und ihre Frau eine schöne Reise haben."
+  },
+  {
+    "english": "I know.",
+    "german": "Ich weiß."
+  },
+  {
+    "english": "I like her.",
+    "german": "Ich mag sie."
+  },
+  {
+    "english": "I'll call you when I leave.",
+    "german": "Ich ruf dich an, wenn ich gehe."
+  },
+  {
+    "english": "I'll come back later.",
+    "german": "Ich komme später wieder her."
+  },
+  {
+    "english": "I'll pay.",
+    "german": "Ich zahle."
+  },
+  {
+    "english": "I'll take it.",
+    "german": "Ich nehme es."
+  },
+  {
+    "english": "I'll take you to the bus stop.",
+    "german": "Ich nehme Sie bis zur Bushaltestelle mit."
+  },
+  {
+    "english": "I lost my watch.",
+    "german": "Ich habe meine Uhr verloren."
+  },
+  {
+    "english": "I love you.",
+    "german": "Ich liebe dich."
+  },
+  {
+    "english": "I'm an American..",
+    "german": "Ich bin ein Amerikaner"
+  },
+  {
+    "english": "I'm cleaning my room.",
+    "german": "Ich mache mein Zimmer sauber."
+  },
+  {
+    "english": "I'm cold.",
+    "german": "Mir ist kalt."
+  },
+  {
+    "english": "I'm coming to pick you up.",
+    "german": "Ich komme vorbei, um dich abzuholen."
+  },
+  {
+    "english": "I'm going to leave.",
+    "german": "Ich werde gehen."
+  },
+  {
+    "english": "I'm good, and you?",
+    "german": "Mir geht es gut, und dir?"
+  },
+  {
+    "english": "I'm happy.",
+    "german": "Ich bin froh."
+  },
+  {
+    "english": "I'm hungry.",
+    "german": "Ich habe Hunger."
+  },
+  {
+    "english": "I'm married.",
+    "german": "Ich bin verheiratet."
+  },
+  {
+    "english": "I'm not busy.",
+    "german": "Ich habe es nicht eilig."
+  },
+  {
+    "english": "I'm not married.I",
+    "german": "ch bin nicht verheiratet."
+  },
+  {
+    "english": "I'm not ready yet.",
+    "german": "Ich bin noch nicht soweit."
+  },
+  {
+    "english": "I'm not sure.",
+    "german": "Ich bin mir nicht sicher."
+  },
+  {
+    "english": "I'm sorry, we're sold out.",
+    "german": "Es tut mir leid, aber wir sind ausverkauft."
+  },
+  {
+    "english": "I'm thirsty.",
+    "german": "Ich habe Durst."
+  },
+  {
+    "english": "I'm very busy.I don't have time now.",
+    "german": "Ich bin sehr beschäftigt. Ich habe jetzt gerade keine Zeit."
+  },
+  {
+    "english": "I need to change clothes.",
+    "german": "Ich muss mir frische Sachen anziehen."
+  },
+  {
+    "english": "I need to go home.",
+    "german": "Ich muss nach Hause gehen."
+  },
+  {
+    "english": "I only want a snack.",
+    "german": "Ich will nur eine Kleinigkeit essen."
+  },
+  {
+    "english": "Is Mr.Smith an American?",
+    "german": "Ist Herr Smith Amerikaner?"
+  },
+  {
+    "english": "Is that enough?",
+    "german": "Ist das genug?"
+  },
+  {
+    "english": "I think it's very good.",
+    "german": "Ich denke, dass das sehr gut ist."
+  },
+  {
+    "english": "I think it tastes good.",
+    "german": "Mir schmeckt das."
+  },
+  {
+    "english": "I thought the clothes were cheaper.",
+    "german": "Ich dachte, dass die Kleidung billiger wäre."
+  },
+  {
+    "english": "It's longer than 2 miles.",
+    "german": "Es ist länger als 2 Meilen."
+  },
+  {
+    "english": "I've been here for two days.",
+    "german": "Ich war 2 Tage dort."
+  },
+  {
+    "english": "I've heard Texas is a beautiful place.",
+    "german": "Ich habe gehört, dass Texas ein schöner Ort ist."
+  },
+  {
+    "english": "I've never seen that before.",
+    "german": "Ich habe das noch nie gesehen."
+  },
+  {
+    "english": "I was about to leave the restaurant when my friends arrived.",
+    "german": "Ich wollte gerade die Gaststätte verlassen, als meine Freunde kamen."
+  },
+  {
+    "english": "Just a little.",
+    "german": "Nur ein bisschen."
+  },
+  {
+    "english": "Just a moment.",
+    "german": "Nur einen Moment."
+  },
+  {
+    "english": "Let me check.",
+    "german": "Lassen Sie mich nachsehen."
+  },
+  {
+    "english": "Let me think about it.",
+    "german": "Lassen Sie mich darüber nachdenken."
+  },
+  {
+    "english": "Let's go have a look.",
+    "german": "Lass uns nachsehen."
+  },
+  {
+    "english": "Let's practice English.",
+    "german": "Lassen Sie uns Englisch üben."
+  },
+  {
+    "english": "May I speak to Mr.Smith please?",
+    "german": "Kann ich bitte mit Herrn Smith sprechen?"
+  },
+  {
+    "english": "More than that..",
+    "german": "Mehr als das"
+  },
+  {
+    "english": "Never mind.",
+    "german": "Macht nichts."
+  },
+  {
+    "english": "Next time.",
+    "german": "Nächstes Mal."
+  },
+  {
+    "english": "No.",
+    "german": "Nein."
+  },
+  {
+    "english": "Nonsense.",
+    "german": "Quatsch! Unsinn!"
+  },
+  {
+    "english": "No, thank you.",
+    "german": "Nein, danke."
+  },
+  {
+    "english": "Nothing else.",
+    "german": "Nichst anderes."
+  },
+  {
+    "english": "Not recently.",
+    "german": "Nicht kürzlich."
+  },
+  {
+    "english": "Not yet.",
+    "german": "Noch nicht."
+  },
+  {
+    "english": "Of course.",
+    "german": "Natürlich."
+  },
+  {
+    "english": "Okay.",
+    "german": "Okay."
+  },
+  {
+    "english": "Please fill out this form.",
+    "german": "Bitte füllen Sie das Formular aus."
+  },
+  {
+    "english": "Please take me to this address.",
+    "german": "Bitte bringen Sie mich zu dieser Adresse."
+  },
+  {
+    "english": "Please write it down.",
+    "german": "Bitte schreiben Sie das auf."
+  },
+  {
+    "english": "Really?",
+    "german": "Wirklich?"
+  },
+  {
+    "english": "Right here.",
+    "german": "Genau hier."
+  },
+  {
+    "english": "Right there.",
+    "german": "Genau dort."
+  },
+  {
+    "english": "See you later.",
+    "german": "Bis später."
+  },
+  {
+    "english": "See you tomorrow.",
+    "german": "Bis morgen."
+  },
+  {
+    "english": "See you tonight.",
+    "german": "Bis heute Abend."
+  },
+  {
+    "english": "She's pretty.",
+    "german": "Sie ist schön."
+  },
+  {
+    "english": "Sorry to bother you.",
+    "german": "Entschuldigen Sie die Störung."
+  },
+  {
+    "english": "Stop!",
+    "german": "Stopp! Halt!"
+  },
+  {
+    "english": "Take a chance.",
+    "german": "Nehmen Sie die Gelegenheit wahr."
+  },
+  {
+    "english": "Take it outside.",
+    "german": "Nehmen Sie es mit nach draußen."
+  },
+  {
+    "english": "Tell me.",
+    "german": "Sag' mir."
+  },
+  {
+    "english": "Thanks for everything.",
+    "german": "Danke für alles."
+  },
+  {
+    "english": "Thanks for your help.",
+    "german": "Danke für ihre Hilfe."
+  },
+  {
+    "english": "Thank you.",
+    "german": "Danke."
+  },
+  {
+    "english": "Thank you miss.",
+    "german": "Danke."
+  },
+  {
+    "english": "Thank you sir.",
+    "german": "Danke."
+  },
+  {
+    "english": "Thank you very much.",
+    "german": "Vielen Dank."
+  },
+  {
+    "english": "That looks great.",
+    "german": "Das sieht großartig aus."
+  },
+  {
+    "english": "That's alright.",
+    "german": "Das ist in Ordnung."
+  },
+  {
+    "english": "That's enough.",
+    "german": "Das ist genug."
+  },
+  {
+    "english": "That's fine.",
+    "german": "Das ist gut."
+  },
+  {
+    "english": "That's it.",
+    "german": "Das ist es."
+  },
+  {
+    "english": "That smells bad.",
+    "german": "Das riecht schlecht."
+  },
+  {
+    "english": "That's not fair.",
+    "german": "Das ist nicht in Ordnung."
+  },
+  {
+    "english": "That's not right.",
+    "german": "Das ist nicht richtig."
+  },
+  {
+    "english": "That's right.",
+    "german": "Das ist richtig."
+  },
+  {
+    "english": "That's too bad.",
+    "german": "Das ist nicht schlecht."
+  },
+  {
+    "english": "That's too many.",
+    "german": "Das sind zu viele."
+  },
+  {
+    "english": "That's too much.",
+    "german": "Das ist zu viel."
+  },
+  {
+    "english": "The book is under the table.",
+    "german": "Das Buch ist unter dem Tisch."
+  },
+  {
+    "english": "They'll be right back.",
+    "german": "Ich komme gleich zurück."
+  },
+  {
+    "english": "They're the same.",
+    "german": "Sie sind dieselben."
+  },
+  {
+    "english": "They're very busy.",
+    "german": "Sie sind sehr beschäftigt."
+  },
+  {
+    "english": "This doesn't work.",
+    "german": "Das funktioniert nicht."
+  },
+  {
+    "english": "This is very difficult.",
+    "german": "Das ist sehr schwierig."
+  },
+  {
+    "english": "This is very important.",
+    "german": "Das ist sehr wichtig."
+  },
+  {
+    "english": "Try it.",
+    "german": "Versuch es."
+  },
+  {
+    "english": "Very good, thanks.",
+    "german": "Sehr gut, danke."
+  },
+  {
+    "english": "We like it very much.",
+    "german": "Wir mögen es sehr."
+  },
+  {
+    "english": "Would you take a message please?",
+    "german": "Würden Sie bitte eine Nachricht entgegen nehmen?"
+  },
+  {
+    "english": "Yes, really.",
+    "german": "Ja, wirklich."
+  },
+  {
+    "english": "You're beautiful.",
+    "german": "Du bist schön."
+  },
+  {
+    "english": "You're very nice.",
+    "german": "Du bist wirklich nett."
+  },
+  {
+    "english": "You're very smart.",
+    "german": "Du bist wirklich klug."
+  },
+  {
+    "english": "Your things are all here.",
+    "german": "Deine Sachen sind alle hier."
+  },
+    {
+    "english": "About 300 kilometers.",
+    "german": "Ungefähr 300 Kilometer."
+  },
+  {
+    "english": "A one way ticket.",
+    "german": "Nur der Hinflug."
+  },
+  {
+    "english": "Are you going to help her?",
+    "german": "Wirst du ihr helfen?"
+  },
+  {
+    "english": "A round trip ticket.",
+    "german": "Hin- und Rückflug."
+  },
+  {
+    "english": "At what time?",
+    "german": "Um welche Uhrzeit?"
+  },
+  {
+    "english": "Can I make an appointment for next Wednesday?",
+    "german": "Könnte ich bitte einen Termin für nächsten Mittwoch bekommen?"
+  },
+  {
+    "english": "Can you repeat that please?",
+    "german": "Können Sie das bitte wiederholen?"
+  },
+  {
+    "english": "Does this road go to New York?",
+    "german": "Führt diese Straße nach New York?"
+  },
+  {
+    "english": "Do you have enough money?",
+    "german": "Hast du genug Geld?"
+  },
+  {
+    "english": "Do you know how to cook?",
+    "german": "Können Sie kochen?"
+  },
+  {
+    "english": "Do you know what this says?",
+    "german": "Weißt du, was das heißt?"
+  },
+  {
+    "english": "Do you want me to come and pick you up?",
+    "german": "Soll ich dich abholen?"
+  },
+  {
+    "english": "Follow me.",
+    "german": "Folgen Sie mir."
+  },
+  {
+    "english": "From here to there.",
+    "german": "Von hier nach dort."
+  },
+  {
+    "english": "Go straight ahead.",
+    "german": "Gehen Sie geradeaus."
+  },
+  {
+    "english": "Have you arrived?",
+    "german": "Bist du angekommen?"
+  },
+  {
+    "english": "Have you been to Boston?",
+    "german": "Waren Sie schon in Boston?"
+  },
+  {
+    "english": "How do I get there?",
+    "german": "Wie komme ich dort hin?"
+  },
+  {
+    "english": "How do I get to Daniel Street?",
+    "german": "Wie komme ich zur Danielstraße?"
+  },
+  {
+    "english": "How do I get to the American Embassy?",
+    "german": "Wie komme ich zur amerikanischen Botschaft?"
+  },
+  {
+    "english": "How long does it take by car?",
+    "german": "Wie lange dauert es mit dem Auto?"
+  },
+  {
+    "english": "How long does it take to get to Georgia?",
+    "german": "Wie lange dauert es mit dem Auto bis nach Georgia?"
+  },
+  {
+    "english": "How long is the flight?",
+    "german": "Wie lange dauert der Flug?"
+  },
+  {
+    "english": "How was the movie?",
+    "german": "Wie war der Film?"
+  },
+  {
+    "english": "I'd like to make a phone call.",
+    "german": "Dürfte ich bitte telefonieren?"
+  },
+  {
+    "english": "I'd like to make a reservation.",
+    "german": "Ich würde gern eine Reservierung machen."
+  },
+  {
+    "english": "I have a question I want to ask you. / I want to ask you a question.",
+    "german": "Ich habe eine Frage an dich."
+  },
+  {
+    "english": "I'll take that one also.",
+    "german": "Ich nehme das auch."
+  },
+  {
+    "english": "I'm coming right now.",
+    "german": "Ich komme gleich."
+  },
+  {
+    "english": "I'm going home in four days.",
+    "german": "In vier Tagen gehe ich nach Hause."
+  },
+  {
+    "english": "I'm leaving tomorrow.",
+    "german": "Ich gehe morgen."
+  },
+  {
+    "english": "I'm looking for the post office.",
+    "german": "Ich suche die Post."
+  },
+  {
+    "english": "Is this pen yours?",
+    "german": "Ist das Ihr Stift?"
+  },
+  {
+    "english": "I wish I had one..",
+    "german": "Ich wünschte, ich hätte eine"
+  },
+  {
+    "english": "One ticket to New York please.",
+    "german": "Ein Ticket nach New York, bitte."
+  },
+  {
+    "english": "One way or round trip??",
+    "german": "Einfach oder Hin- und Rückflug"
+  },
+  {
+    "english": "Please speak slower.",
+    "german": "Bitte sprechen Sie langsamer."
+  },
+  {
+    "english": "Please take me to the airport.",
+    "german": "Bitte bringen Sie mich zum Flughafen."
+  },
+  {
+    "english": "That way.",
+    "german": "Hier entlang."
+  },
+  {
+    "english": "The plane departs at 5pm.",
+    "german": "Der Flug fliegt um 17 Uhr ab."
+  },
+  {
+    "english": "They arrived yesterday.",
+    "german": "Sie sind gestern angekommen."
+  },
+  {
+    "english": "Turn around.",
+    "german": "Dreh dich um."
+  },
+  {
+    "english": "Turn left.",
+    "german": "Dreh dich nach links."
+  },
+  {
+    "english": "Turn right.",
+    "german": "Dreh dich nach rechts."
+  },
+  {
+    "english": "What time are you  going to the bus station?",
+    "german": "Wann gehst du zur Bushaltestelle?"
+  },
+  {
+    "english": "When did this happen?",
+    "german": "Wann ist das passiert?"
+  },
+  {
+    "english": "When did you arrive in Boston?",
+    "german": "Wann kommst du in Boston an?"
+  },
+  {
+    "english": "When does he arrive?",
+    "german": "Wann kommt er an?"
+  },
+  {
+    "english": "When does it arrive?",
+    "german": "Wann kommt es an?"
+  },
+  {
+    "english": "When does the bank open?",
+    "german": "Wann macht die Bank auf?"
+  },
+  {
+    "english": "When does the bus leave?",
+    "german": "Wann fährt der Bus los?"
+  },
+  {
+    "english": "When do we arrive?",
+    "german": "Wann kommen wir an?"
+  },
+  {
+    "english": "When do we leave?",
+    "german": "Wann fahren wir ab?"
+  },
+  {
+    "english": "Where can I mail this?",
+    "german": "Wo kann ich das abschicken?"
+  },
+  {
+    "english": "Where is she from?",
+    "german": "Woher kommt sie?"
+  },
+  {
+    "english": "Where is the bathroom?",
+    "german": "Wo ist das Badezimmer?"
+  },
+  {
+    "english": "Why not?",
+    "german": "Warum nicht?"
+  },
+  {
+    "english": "Will you remind me?",
+    "german": "Kannst du mich erinnern?"
+  },
+    {
+    "english": "Come here.",
+    "german": "Komm her."
+  },
+  {
+    "english": "Does it often snow in the winter in Massachusetts?Schneit es im Winter oft in Massachusetts?",
+    "german": "Schneit es im Winter oft in Massachusetts?"
+  },
+  {
+    "english": "Do you think it'll rain today?",
+    "german": "Glaubst du, dass es morgen regnet?"
+  },
+  {
+    "english": "Do you think it's going to rain tomorrow?",
+    "german": "Glaubst du, dass es auch morgen regnen wird?"
+  },
+  {
+    "english": "How's business?",
+    "german": "Wie läuft das Geschäft?"
+  },
+  {
+    "english": "Is it close?",
+    "german": "Ist es in der Nähe?"
+  },
+  {
+    "english": "Is it possible?",
+    "german": "Ist das möglich?"
+  },
+  {
+    "english": "Is it ready?",
+    "german": "Ist es soweit?"
+  },
+  {
+    "english": "It costs 20 dollars per hour.",
+    "german": "Es kostet 20 Dollar pro Stunde."
+  },
+  {
+    "english": "It hurts here.",
+    "german": "Es tut hier weh."
+  },
+  {
+    "english": "It's far from here.",
+    "german": "Es ist weit von hier."
+  },
+  {
+    "english": "It's going to be hot today.",
+    "german": "Es wird warm heute."
+  },
+  {
+    "english": "It's north of here.",
+    "german": "Es ist nördlich von hier."
+  },
+  {
+    "english": "It's over there.",
+    "german": "Es ist dort drüben."
+  },
+  {
+    "english": "It's raining.",
+    "german": "Es regnet."
+  },
+  {
+    "english": "It's too late.",
+    "german": "Es ist zu spät."
+  },
+  {
+    "english": "It's very important.",
+    "german": "Es ist sehr wichtig."
+  },
+  {
+    "english": "It will arrive shortly.",
+    "german": "Es wird bald ankommen."
+  },
+  {
+    "english": "The roads are slippery.",
+    "german": "Die Straßen sind rutschig."
+  },
+  {
+    "english": "What's the room rate?",
+    "german": "Was kostet das Zimmer?"
+  },
+  {
+    "english": "What will the weather be like tomorrow?",
+    "german": "Wie wird das Wetter morgen?"
+  }
+]
